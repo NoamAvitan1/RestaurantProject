@@ -1,7 +1,7 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { BsPlayBtnFill } from "react-icons/bs";
-import Sliding from "./Sliding";
+import { Slide } from "./Slide";
 
 
 export default function Home() {
@@ -19,7 +19,7 @@ export default function Home() {
 
   return (
     <div>
-      <Sliding/>
+      <Slide/>
       <div className="flex justify-center mt-5">
         <select className="border border-black p-2">
           <option value="">Select a year</option>
