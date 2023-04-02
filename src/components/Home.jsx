@@ -18,7 +18,7 @@ export default function Home() {
   const doApiDallE = async () => {
     setLoading(true);
     const { data } = await openai.createImage({
-      prompt: gptRef.current.value,
+      prompt: gptref.current.value,
       n: 10,
       size: "1024x1024",
     });
