@@ -23,8 +23,8 @@ export default function Home() {
       size: "1024x1024",
     });
     setDataInfoDallE(data.data);
-    setDataInfoGpt([]);
-    gptRef.current.value = "";
+    setDataInfo([]);
+    gptref.current.value = "";
     setLoading(false);
   };
   const doApiGpt = async () => {
