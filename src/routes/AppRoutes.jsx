@@ -9,7 +9,6 @@ export default function AppRoutes() {
             <Route path='/' element={<Header/>}>
                 <Route index element={<Home/>}/>
                 <Route path='restaurant/:id'/>
-                
             </Route>
         )
     )

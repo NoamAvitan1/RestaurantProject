@@ -1,6 +1,6 @@
 import React, {  useEffect, useState } from "react";
 import { restaurants } from "../db";
-import { NavLink } from "react-router-dom";
+import { NavLink, useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { setRestaurant , getRestaurant } from "../fetuares/testSlice/test";
 
@@ -8,6 +8,7 @@ export default function Home() {
 
   const restaurant = useSelector((state) => state.restaurant)
   const dispatch = useDispatch()
+  const {id} = useParams();
   
   useEffect(()=>{
     dispatch(getRestaurant(restaurants));
@@ -23,7 +24,7 @@ export default function Home() {
       <p className="">{restaurants.cuisine}</p>
       <p className="ml-3">{restaurants.price}</p>
       </div>
-      <NavLink className={"text-blue-600 text-2xl"}>Click for more details</NavLink>
+      <NavLink to={`restaurant`} className={"text-blue-600 text-2xl"}>Click for more details</NavLink>
       </div>
     ) )}
    </div>
