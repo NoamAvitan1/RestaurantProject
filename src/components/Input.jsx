@@ -1,11 +1,10 @@
-import React, { useState } from 'react'
-import { useDispatch } from 'react-redux';
-import { useNavigate, useSearchParams } from 'react-router-dom';
-import { getRestaurant, searchRestaurant } from '../fetuares/testSlice/test';
-
+import React, { useState } from "react";
+import { useDispatch } from "react-redux";
+import { useNavigate, useSearchParams } from "react-router-dom";
+import { getRestaurant, searchRestaurant } from "../fetuares/testSlice/test";
 
 export default function Input() {
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState("");
   const [searchParams, setSearchParams] = useSearchParams();
   const dispatch = useDispatch();
   const navigate = useNavigate();
@@ -14,11 +13,11 @@ export default function Input() {
     setSearchTerm(e.target.value);
   };
   const handleKeyDown = (e) => {
-    if (e.key === 'Enter') {
+    if (e.key === "Enter") {
       setSearchParams({ query: searchTerm });
       console.log(searchTerm);
       dispatch(searchRestaurant(searchTerm));
-      e.target.value=""
+      e.target.value = "";
     }
   };
 
@@ -27,14 +26,17 @@ export default function Input() {
     console.log(searchTerm);
   };
 
-  const Change = () =>{
-    navigate('/')
+  const Change = () => {
+    navigate("/");
     dispatch(getRestaurant());
-  }
+  };
 
   return (
     <div className="bg-blue-600 w-full flex flex-col justify-center items-center h-[200px]">
-      <button onClick={Change} className="p-2 text-3xl md:text-4xl font-bold pb-5 text-white">
+      <button
+        onClick={() => Change()}
+        className="p-2 text-3xl md:text-4xl font-bold pb-5 text-white"
+      >
         Find your table for any occasion
       </button>
       <div className="mt-3">
@@ -45,7 +47,10 @@ export default function Input() {
           type="text"
           placeholder="State, city or town"
         />
-        <button onClick={handleClick} className="p-2 ml-4 bg-red-600 text-white rounded">
+        <button
+          onClick={handleClick}
+          className="p-2 ml-4 bg-red-600 text-white rounded"
+        >
           Let's go
         </button>
       </div>
