@@ -4,6 +4,8 @@ import { NavLink } from "react-router-dom";
 
 export default function Home() {
 
+  
+
   return (
    <div className="grid grid-cols-4 gap-3 justify-items-center mx-auto my-0 container mt-10">
     {restaurants && restaurants.map((restaurant,i) =>(
