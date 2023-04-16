@@ -1,16 +1,54 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { useDispatch } from 'react-redux';
+import { useNavigate, useSearchParams } from 'react-router-dom';
+import { getRestaurant, searchRestaurant } from '../fetuares/testSlice/test';
+
 
 export default function Input() {
-  const handleChange  = () =>{
-    
+  const [searchTerm, setSearchTerm] = useState('');
+  const [searchParams, setSearchParams] = useSearchParams();
+  const dispatch = useDispatch();
+  const navigate = useNavigate();
+
+  const handleChange = (e) => {
+    setSearchTerm(e.target.value);
+  };
+  const handleKeyDown = (e) => {
+    if (e.key === 'Enter') {
+      setSearchParams({ query: searchTerm });
+      console.log(searchTerm);
+      dispatch(searchRestaurant(searchTerm));
+      e.target.value=""
+    }
+  };
+
+  const handleClick = (e) => {
+    setSearchParams({ query: searchTerm });
+    console.log(searchTerm);
+  };
+
+  const Change = () =>{
+    navigate('/')
+    dispatch(getRestaurant());
   }
+
   return (
-    <div className=' bg-blue-600 w-full flex flex-col justify-center items-center h-[200px] '>
-        <h1 className='p-2 text-3xl md:text-4xl font-bold pb-5 text-white'>Find your table for any occasion</h1>
-        <div className='mt-3'>
-        <input onKeyDown={handleChange}  className='p-2 rounded w-80 md:w-96' type="text" placeholder='State, city or town ' />
-        <button className='p-2 ml-4 bg-red-600 text-white rounded '>Lets go</button>
-        </div>
+    <div className="bg-blue-600 w-full flex flex-col justify-center items-center h-[200px]">
+      <button onClick={Change} className="p-2 text-3xl md:text-4xl font-bold pb-5 text-white">
+        Find your table for any occasion
+      </button>
+      <div className="mt-3">
+        <input
+          onChange={handleChange}
+          onKeyDown={handleKeyDown}
+          className="p-2 rounded w-80 md:w-96"
+          type="text"
+          placeholder="State, city or town"
+        />
+        <button onClick={handleClick} className="p-2 ml-4 bg-red-600 text-white rounded">
+          Let's go
+        </button>
+      </div>
     </div>
-  )
+  );
 }

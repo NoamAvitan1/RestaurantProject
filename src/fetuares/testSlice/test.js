@@ -19,9 +19,19 @@ export const RestaurantSlice = createSlice({
             state.restaurant = action.payload;
             localStorage.setItem('restaurant',JSON.stringify(state.restaurant));
          },
+         searchRestaurant: (state, action) => {
+            const searchTerm = action.payload;
+            const restaurants = JSON.parse(localStorage.getItem("restaurant"));
+          
+            const filteredRestaurants = restaurants.filter((restaurant) =>
+              restaurant.city.toLowerCase().includes(searchTerm.toLowerCase())
+            );
+          
+            state.restaurant = filteredRestaurants;
+          },
     }
 })
 
-export const {getRestaurant,addRestaurant,setRestaurant} = RestaurantSlice.actions;
+export const {getRestaurant,addRestaurant,setRestaurant,searchRestaurant} = RestaurantSlice.actions;
 
 export default RestaurantSlice.reducer;
