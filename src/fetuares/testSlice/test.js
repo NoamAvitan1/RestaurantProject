@@ -1,12 +1,14 @@
+import { createSlice } from "@reduxjs/toolkit";
+
 export const RestaurantSlice = createSlice({
-    name:'restaurant',
+    name:'restaurant',  
     initialState:{
         restaurant:[]
     },
     reducers:{
         getRestaurant: (state, action) => {
-            state.restaurant = JSON.parse(action.payload); 
-            localStorage.setItem("restaurant", JSON.stringify(state.restaurant));
+            const restaurants = JSON.parse(localStorage.getItem("restaurant")); 
+            state.restaurant = restaurants;
         },
          addRestaurant:(state,action)=>{
             const restaurant = action.payload;
