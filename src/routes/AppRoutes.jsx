@@ -9,6 +9,8 @@ import Home from "../components/Home";
 import Header from "../layouts/Header";
 import Restaurant from "../components/Restaurant";
 import AddRestaurant from "../components/AddRestaurant";
+import ManageRestaurant from "../components/ManageRestaurant";
+import Update from "../components/Update";
 
 export default function AppRoutes() {
   const router = createBrowserRouter(
@@ -17,6 +19,8 @@ export default function AppRoutes() {
         <Route index element={<Home />} />
         <Route path="restaurant/:id" element={<Restaurant />} />
         <Route path="addRestaurant" element={<AddRestaurant/>}/>
+        <Route path="manageRestaurant" element={<ManageRestaurant/>}/>
+        <Route path="manageRestaurant/update/:id" element={<Update/>}/>
       </Route>
     )
   );

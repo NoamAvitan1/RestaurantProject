@@ -40,6 +40,29 @@ export const RestaurantSlice = createSlice({
       const filter = restaurants.find((restaurant) => restaurant.id == id);
       state.singleRestaurant = filter;
     },
+    deleteRestaurant: (state, action) => {
+      const id = action.payload;
+      const restaurants = JSON.parse(localStorage.getItem('restaurant'));
+      const filter = restaurants.filter((restaurant) => restaurant.id != id);
+      state.restaurant = filter;
+      localStorage.setItem('restaurant', JSON.stringify(filter));
+    },
+    UpdateId: (state, action) => {
+      state.restaurant.map((restaurants,i) => (
+        restaurants.id = i
+      ))
+      localStorage.setItem('restaurant', JSON.stringify(state.restaurant));
+    },
+    updateData: (state, action) => {
+      state.restaurant = JSON.parse(localStorage.getItem('restaurant'))
+      console.log(state.restaurant);
+      console.log(action.payload)
+      const id = action.payload.id;
+      const _bodyData = action.payload._bodyData;
+      state.restaurant[id] = _bodyData;
+      state.restaurant[id].id = parseInt(id);
+      localStorage.setItem('restaurant', JSON.stringify(state.restaurant));      
+    }
   },
 });
 
@@ -49,6 +72,9 @@ export const {
   setRestaurant,
   searchRestaurant,
   singleRestaurant,
+  deleteRestaurant,
+  UpdateId,
+  updateData
 } = RestaurantSlice.actions;
 
 export default RestaurantSlice.reducer;
