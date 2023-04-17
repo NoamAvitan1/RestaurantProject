@@ -8,6 +8,7 @@ import {
 import Home from "../components/Home";
 import Header from "../layouts/Header";
 import Restaurant from "../components/Restaurant";
+import AddRestaurant from "../components/AddRestaurant";
 
 export default function AppRoutes() {
   const router = createBrowserRouter(
@@ -15,6 +16,7 @@ export default function AppRoutes() {
       <Route path="/" element={<Header />}>
         <Route index element={<Home />} />
         <Route path="restaurant/:id" element={<Restaurant />} />
+        <Route path="addRestaurant" element={<AddRestaurant/>}/>
       </Route>
     )
   );

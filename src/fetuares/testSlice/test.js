@@ -14,11 +14,11 @@ export const RestaurantSlice = createSlice({
     addRestaurant: (state, action) => {
       const restaurant = action.payload;
       state.restaurant.push(restaurant);
-      localStorage.setItem('restaurant', JSON.stringify(state.restaurants));
+      localStorage.setItem('restaurant', JSON.stringify(state.restaurant));
     },
     setRestaurant: (state, action) => {
       state.restaurant = action.payload;
-      localStorage.setItem('restaurant', JSON.stringify(state.restaurants));
+      localStorage.setItem('restaurant', JSON.stringify(state.restaurant));
     },
     searchRestaurant: (state, action) => {
       const searchTerm = action.payload;

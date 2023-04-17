@@ -7,7 +7,7 @@ export default function Header() {
   return (
     <div>
     <header>
-      <Input/>
+      
     </header>
     <Outlet/>
     </div>
