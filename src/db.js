@@ -4,7 +4,7 @@ export const restaurants = [
     name: "La Petite France",
     city: "Paris",
     price: "$45",
-    main_image: "https://example.com/la-petite-france.jpg",
+    main_image: "https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=1600",
     cuisine: "French",
     images: [
       "https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=1600",
@@ -21,7 +21,7 @@ export const restaurants = [
     name: "Pizzeria Da Michele",
     city: "Naples",
     price: "$30",
-    main_image: "https://example.com/pizzeria-da-michele.jpg",
+    main_image: "https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=1600",
     cuisine: "Italian",
     images: [
       "https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=1600",
@@ -38,7 +38,7 @@ export const restaurants = [
     name: "Korean BBQ House",
     city: "Los Angeles",
     price: "$25",
-    main_image: "https://example.com/korean-bbq-house.jpg",
+    main_image: "https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=1600",
     cuisine: "Korean",
     images: [
       "https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=1600",
@@ -55,7 +55,7 @@ export const restaurants = [
     name: "El Pastor",
     city: "London",
     price: "$35",
-    main_image: "https://example.com/el-pastor.jpg",
+    main_image: "https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=1600",
     cuisine: "Mexican",
     images: [
       "https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=1600",
@@ -72,7 +72,7 @@ export const restaurants = [
     name: "The Fat Duck",
     city: "Bray",
     price: "$95",
-    main_image: "https://example.com/the-fat-duck.jpg",
+    main_image: "https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=1600",
     cuisine: "Modern European",
     images: [
       "https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=1600",
@@ -89,7 +89,7 @@ export const restaurants = [
     name: "Sushi Nakazawa",
     city: "New York",
     price: "$85",
-    main_image: "https://example.com/sushi-nakazawa.jpg",
+    main_image: "https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=1600",
     cuisine: "Japanese",
     images: [
       "https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=1600",
@@ -106,7 +106,7 @@ export const restaurants = [
     name: "Le Pain Quotidien",
     city: "Paris",
     price: "$20",
-    main_image: "https://example.com/le-pain-quotidien.jpg",
+    main_image: "https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=1600",
     cuisine: "French",
     images: [
       "https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=1600",
@@ -123,7 +123,7 @@ export const restaurants = [
     name: "Shake Shack",
     city: "New York",
     price: "$15",
-    main_image: "https://example.com/shake-shack.jpg",
+    main_image: "https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=1600",
     cuisine: "American",
     images: [
       "https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=1600",
@@ -140,7 +140,7 @@ export const restaurants = [
     name: "Din Tai Fung",
     city: "Taipei",
     price: "$30",
-    main_image: "https://example.com/din-tai-fung.jpg",
+    main_image: "https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=1600",
     cuisine: "Taiwanese",
     images: [
       "https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=1600",
@@ -157,7 +157,7 @@ export const restaurants = [
     name: "Mugaritz",
     city: "San Sebastian",
     price: "$150",
-    main_image: "https://example.com/mugaritz.jpg",
+    main_image: "https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=1600",
     cuisine: "Modern Basque",
     images: [
       "https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=1600",
@@ -174,7 +174,7 @@ export const restaurants = [
     name: "Gaggan",
     city: "Bangkok",
     price: "$120",
-    main_image: "https://example.com/gaggan.jpg",
+    main_image: "https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=1600",
     cuisine: "Progressive Indian",
     images: [
       "https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=1600",
@@ -191,7 +191,7 @@ export const restaurants = [
     name: "Central",
     city: "Lima",
     price: "$90",
-    main_image: "https://example.com/central.jpg",
+    main_image: "https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=1600",
     cuisine: "Peruvian",
     images: [
       "https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=1600",
@@ -208,7 +208,7 @@ export const restaurants = [
     name: "L'Atelier de Joël Robuchon",
     city: "Paris",
     price: "$110",
-    main_image: "https://example.com/latelier-de-joel-robuchon.jpg",
+    main_image: "https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=1600",
     cuisine: "French",
     images: [
       "https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=1600",
@@ -225,7 +225,7 @@ export const restaurants = [
     name: "The Ledbury",
     city: "London",
     price: "$120",
-    main_image: "https://example.com/the-ledbury.jpg",
+    main_image: "https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=1600",
     cuisine: "Modern European",
     images: [
       "https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=1600",
@@ -242,7 +242,7 @@ export const restaurants = [
     name: "Nobu",
     city: "Tokyo",
     price: "$95",
-    main_image: "https://example.com/nobu.jpg",
+    main_image: "https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=1600",
     cuisine: "Japanese",
     images: [
       "https://images.pexels.com/photos/67468/pexels-photo-67468.jpeg?auto=compress&cs=tinysrgb&w=1600",

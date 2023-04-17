@@ -22,16 +22,16 @@ export default function Home() {
 
   return (
     <div>
-      <div class="absolute">
+      <div className="absolute">
   <button
-    class="flex items-center justify-center w-8 h-8 focus:outline-none"
+    className="flex items-center justify-center w-8 h-8 focus:outline-none"
     onClick={() => setOpen(!open)}
   >
     <FaAlignJustify className="text-white z-50" />
   </button>
   {open && (
-    <div class="absolute z-50 top-10 w-48 py-2 bg-white rounded shadow-md">
-      <NavLink to="addRestaurant" class="block px-4 py-2 text-gray-800 hover:bg-gray-100">
+    <div className="absolute z-50 top-10 w-48 py-2 bg-white rounded shadow-md">
+      <NavLink to="addRestaurant" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">
         Add Restaurant
       </NavLink>
     </div>
@@ -42,7 +42,7 @@ export default function Home() {
       {restaurant?.length > 0 &&
         restaurant.map((restaurants, i) => (
           <div className="border p-2 hover:shadow-2xl hover:scale-[102%] duration-300" key={i}>
-            <img className="w-[280px]" src={restaurants.images[1]} alt="" />
+            <img className="w-[280px]" src={restaurants.main_image} alt="" />
             <h1 className=" font-bold">{restaurants.name}</h1>
             <div className="flex ">
               <p className="">{restaurants.cuisine}</p>
