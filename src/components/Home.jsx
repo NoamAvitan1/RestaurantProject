@@ -37,7 +37,7 @@ export default function Home() {
       <NavLink to="manageRestaurant" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">
         Manage Restaurant
       </NavLink>
-      <button className="block px-4 py-2 text-gray-800 hover:bg-gray-100" onClick={()=>dispatch(setRestaurant())}>Set Restaurant</button>
+      <button className="block px-4 py-2 text-gray-800 hover:bg-gray-100" onClick={()=>dispatch(setRestaurant(restaurants))}>Set Restaurant</button>
     </div>
   )}
 </div>
