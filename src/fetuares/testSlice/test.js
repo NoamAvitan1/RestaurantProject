@@ -48,6 +48,8 @@ export const RestaurantSlice = createSlice({
       localStorage.setItem('restaurant', JSON.stringify(filter));
     },
     UpdateId: (state, action) => {
+      if(!state.restaurant?.length > 0)
+      return 
       state.restaurant.map((restaurants,i) => (
         restaurants.id = i
       ))
