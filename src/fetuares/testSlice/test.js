@@ -12,8 +12,9 @@ export const RestaurantSlice = createSlice({
       state.restaurant = restaurants;
     },
     addRestaurant: (state, action) => {
+
       state.restaurant = JSON.parse(localStorage.getItem("restaurant"));
-      state.restaurant = [...state.restaurant, action.payload];
+      state.restaurant = state.restaurant?[...state.restaurant, action.payload]:[action.payload];
       state.restaurant[state.restaurant.length-1].images = (state.restaurant[state.restaurant.length-1].images).split(',');
       state.restaurant[state.restaurant.length-1].id = state.restaurant.length;
       state.restaurant[state.restaurant.length-1].created_at = Date.now();
