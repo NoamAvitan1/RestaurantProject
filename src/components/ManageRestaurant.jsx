@@ -29,7 +29,7 @@ export default function ManageRestaurant() {
         <p className="p-2">Menu</p>
       </div>
       <div className="container mx-auto">
-        {restaurant &&
+        {restaurant?.length > 0 &&
           restaurant.map((restaurans, i) => (
             <div
               className="p-2 border-2 border-black flex justify-between items-center"
