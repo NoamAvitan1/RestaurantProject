@@ -16,8 +16,8 @@ export default function Home() {
   const dispatch = useDispatch();
   const [open, setOpen] = useState(false);
   useEffect(() => {
-    dispatch(getRestaurant(restaurants));
-  }, []);
+    dispatch(getRestaurant(restaurant));
+  }, [dispatch]);
   console.log(restaurant);
 
   return (
@@ -37,7 +37,7 @@ export default function Home() {
       <NavLink to="manageRestaurant" className="block px-4 py-2 text-gray-800 hover:bg-gray-100">
         Manage Restaurant
       </NavLink>
-      <button className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Set Restaurant</button>
+      {/* <button className="block px-4 py-2 text-gray-800 hover:bg-gray-100">Set Restaurant</button> */}
     </div>
   )}
 </div>
