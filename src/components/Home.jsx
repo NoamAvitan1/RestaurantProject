@@ -16,7 +16,7 @@ export default function Home() {
   const dispatch = useDispatch();
   const [open, setOpen] = useState(false);
   useEffect(() => {
-    dispatch(getRestaurant(restaurant));
+    dispatch(getRestaurant(restaurants));
   }, [dispatch]);
   console.log(restaurant);
 
