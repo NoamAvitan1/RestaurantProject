@@ -22,7 +22,7 @@ export default function Restaurant() {
       {restaurant && 
       <div>
       <div className="bg-black w-full flex  justify-center items-center h-[200px]">
-        <button className='text-3xl md:text-4xl duration-500 text-white' onClick={() =>navigate('/')}>{restaurant.name} Restaurant {restaurant.city}</button>
+        <h1 className='text-2xl md:text-4xl lg:text-5xl duration-500 text-white'>{restaurant.name} Restaurant {restaurant.city}</h1>
       </div>
       <div className=" container">
         <div className="flex items-start border-b-2">
@@ -44,6 +44,9 @@ export default function Restaurant() {
         </div>
       </div>
      </div>}
+     <div className='flex justify-center items-center w-full'>
+     <button className='text-4xl mt-5  p-4 bg-black rounded text-white hover:text-red-500 hover:duration-700' onClick={() =>navigate('/')}>Back Home</button>
+     </div>
       </div>
   );
 }
