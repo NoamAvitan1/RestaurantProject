@@ -19,7 +19,7 @@ export default function Restaurant() {
 
   return (
     <div>
-      {restaurant && 
+      {restaurant?.length > 0 && 
       <div>
       <div className="bg-black w-full flex  justify-center items-center h-[200px]">
         <h1 className='text-2xl md:text-4xl lg:text-5xl duration-500 text-white'>{restaurant.name} Restaurant {restaurant.city}</h1>

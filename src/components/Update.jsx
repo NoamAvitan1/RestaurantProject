@@ -28,7 +28,7 @@ export default function Update() {
   const onSub = (_bodyData) => {
     console.log(_bodyData);
     dispatch(updateData({_bodyData,id}));
-    navigate('/manageRestaurant');
+    navigate('/manageRestaurant'); 
   };
   return (
     <div>
